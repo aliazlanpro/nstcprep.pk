@@ -2,6 +2,13 @@ import { DocsLayout } from "fumadocs-ui/layouts/docs";
 import type { ReactNode } from "react";
 import { baseOptions } from "@/app/layout.config";
 import { source } from "@/lib/source";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  XIcon,
+  YoutubeIcon,
+} from "@/components/icons";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
@@ -11,7 +18,37 @@ export default function Layout({ children }: { children: ReactNode }) {
       links={[
         {
           type: "icon",
-          url: "https://github.com/fuma-nama/fumadocs",
+          url: "https://instagram.com/nstcprep",
+          text: "Instagram",
+          icon: <InstagramIcon />,
+        },
+        {
+          type: "icon",
+          url: "https://facebook.com/nstcprep",
+          text: "Facebook",
+          icon: <FacebookIcon />,
+        },
+        {
+          type: "icon",
+          url: "https://x.com/nstcprep",
+          text: "X",
+          icon: <XIcon />,
+        },
+        {
+          type: "icon",
+          url: "https://www.linkedin.com/company/nstcprep",
+          text: "LinkedIn",
+          icon: <LinkedInIcon />,
+        },
+        // {
+        //   type: "icon",
+        //   url: "https://www.youtube.com/@nstcprep",
+        //   text: "Youtube",
+        //   icon: <YoutubeIcon />,
+        // },
+        {
+          type: "icon",
+          url: "https://github.com/aliazlanpro/nstcprep.pk",
           text: "Github",
           icon: (
             <svg role="img" viewBox="0 0 24 24" fill="currentColor">

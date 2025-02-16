@@ -4,7 +4,7 @@ import { icons } from "lucide-react";
 import { createElement } from "react";
 
 export const source = loader({
-  baseUrl: "/p",
+  baseUrl: "/",
   source: pages.toFumadocsSource(),
   icon(icon) {
     if (!icon) {

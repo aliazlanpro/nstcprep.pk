@@ -12,6 +12,7 @@ import { Authors } from "@/components/authors";
 import { GDriveIframe } from "@/components/gdrive-iframe";
 import { Quiz } from "@/components/quiz";
 import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
+import { Callout } from "fumadocs-ui/components/callout";
 import { Microscope } from "lucide-react";
 import { Calculator } from "lucide-react";
 import { Atom } from "lucide-react";
@@ -33,16 +34,6 @@ export default async function Page(props: {
       tableOfContent={{
         style: "clerk",
         single: false,
-        footer: (
-          <div className="text-sm text-fd-muted-foreground mt-4 ">
-            {page.data.lastModified && (
-              <>
-                Last modified on{" "}
-                {new Date(page.data.lastModified).toDateString()}
-              </>
-            )}
-          </div>
-        ),
       }}
       editOnGithub={{
         owner: "aliazlanpro",
@@ -57,6 +48,7 @@ export default async function Page(props: {
         {page.data.description}
       </DocsDescription>
       {page.data.authors && <Authors authorSlugs={page.data.authors} />}
+
       <DocsBody className="mt-8">
         <MDX
           components={{
@@ -66,6 +58,8 @@ export default async function Page(props: {
             Quiz,
             Accordion,
             Accordions,
+            Callout,
+            // Icons
             Microscope,
             Calculator,
             Atom,
@@ -73,6 +67,16 @@ export default async function Page(props: {
           }}
         />
         {page.data.index ? <DocsCategory page={page} from={source} /> : null}
+        {page.data.lastModified && (
+          <div className="text-xs text-fd-muted-foreground mt-4">
+            Last modified on{" "}
+            {new Date(page.data.lastModified).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "2-digit",
+            })}
+          </div>
+        )}
       </DocsBody>
     </DocsPage>
   );

@@ -7,7 +7,7 @@ export function Authors({ authorSlugs }: { authorSlugs: AuthorSlug[] }) {
       <h3 className="text-sm font-semibold">
         Author{authorSlugs.length > 1 ? "s" : ""}
       </h3>
-      <div className="flex gap-4 items-center flex-wrap mt-4">
+      <div className="flex gap-4 items-center flex-wrap mt-3">
         {authorSlugs.map((slug) => {
           const author = allAuthors[slug];
           return (

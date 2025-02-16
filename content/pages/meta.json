@@ -1,4 +1,13 @@
 {
   "title": "pages",
-  "pages": ["index", "apply", "---NSTC---", "...", "--- ---", "faqs", "prize"]
+  "pages": [
+    "index",
+    "apply",
+    "---NSTC---",
+    "...",
+    "---Others---",
+    "faqs",
+    "prizes",
+    "contact"
+  ]
 }
