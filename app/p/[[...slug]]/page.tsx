@@ -34,8 +34,13 @@ export default async function Page(props: {
         style: "clerk",
         single: false,
         footer: (
-          <div className="text-sm text-fd-muted-foreground ">
-            {page.data.lastModified || ""}
+          <div className="text-sm text-fd-muted-foreground mt-4 ">
+            {page.data.lastModified && (
+              <>
+                Last modified on{" "}
+                {new Date(page.data.lastModified).toDateString()}
+              </>
+            )}
           </div>
         ),
       }}
