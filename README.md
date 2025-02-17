@@ -51,7 +51,7 @@ Contributions from NSTC Alumni and other contributors are welcome! Follow these 
 1. All website content is located in the `content/pages` directory as MDX files
 2. You can modify existing content or add new pages through Pull Requests
 
-Note: Each [website page](https://nstcprep.pk) has an "Edit with GitHub" button at the bottom that also links directly to the source MDX file
+Note: Each [website page](https://nstcprep.pk) has an "Edit on GitHub" button at the bottom that also links directly to the source MDX file
 
 ### First Time Contributors
 
