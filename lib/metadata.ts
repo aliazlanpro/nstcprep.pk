@@ -7,7 +7,7 @@ export function createMetadata(override: Metadata): Metadata {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
       url: "https://nstcprep.pk",
-      images: "/banner.png",
+      images: "/banner.jpg",
       siteName: "NSTC Preparations",
       type: "website",
       ...override.openGraph,
@@ -17,7 +17,7 @@ export function createMetadata(override: Metadata): Metadata {
       creator: "@AliAzlanReal",
       title: override.title ?? undefined,
       description: override.description ?? undefined,
-      images: "/banner.png",
+      images: "/banner.jpg",
       ...override.twitter,
     },
   };
