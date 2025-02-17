@@ -1,26 +1,51 @@
-# nstcprep.pk
+# NSTC Preparations
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+A comprehensive Next.js application for NSTC Preparations.
 
-Run development server:
+## Getting Started
+
+First, clone the repository and install dependencies:
 
 ```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
+git clone https://github.com/yourusername/nstcprep.pk.git
+cd nstcprep.pk
+pnpm install
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+Then, run the development server:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+## Features
+
+- Documentation built with Fumadocs UI
+- MDX content support
+- Built-in components for YouTube embeds and quizzes
+- SEO optimized with OpenGraph and Twitter cards
+- Responsive design
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Fumadocs UI](https://fumadocs.vercel.app/) - Documentation UI components
+- [MDX](https://mdxjs.com/) - Markdown with JSX
+- [TailwindCSS](https://tailwindcss.com/) - Styling
+
+## Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm postinstall` - Run Fumadocs MDX setup
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+[MIT License](LICENSE)
