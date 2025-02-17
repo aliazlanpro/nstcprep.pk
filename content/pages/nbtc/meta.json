@@ -1,4 +1,12 @@
 {
   "title": "NBTC - Biology",
-  "pages": ["introduction", "guide", "sample-paper", "results", "ibo", "..."]
+  "pages": [
+    "introduction",
+    "guide",
+    "sample-paper",
+    "descriptive-questions",
+    "results",
+    "ibo",
+    "..."
+  ]
 }
