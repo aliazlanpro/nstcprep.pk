@@ -11,8 +11,10 @@ import defaultMdxComponents from "fumadocs-ui/mdx";
 import { Authors } from "@/components/authors";
 import { GDriveIframe } from "@/components/gdrive-iframe";
 import { Quiz } from "@/components/quiz";
+import { YTEmbed } from "@/components/yt-embed";
 import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 import { Callout } from "fumadocs-ui/components/callout";
+import { ImageZoom } from "fumadocs-ui/components/image-zoom";
 import { Microscope } from "lucide-react";
 import { Calculator } from "lucide-react";
 import { Atom } from "lucide-react";
@@ -59,6 +61,8 @@ export default async function Page(props: {
             Accordion,
             Accordions,
             Callout,
+            img: (props) => <ImageZoom {...(props as any)} />,
+            YTEmbed,
             // Icons
             Microscope,
             Calculator,
@@ -68,7 +72,7 @@ export default async function Page(props: {
         />
         {page.data.index ? <DocsCategory page={page} from={source} /> : null}
         {page.data.lastModified && (
-          <div className="text-xs text-fd-muted-foreground mt-4">
+          <div className="text-xs text-fd-muted-foreground mt-4 md:mt-8">
             Last modified on{" "}
             {new Date(page.data.lastModified).toLocaleDateString("en-US", {
               year: "numeric",
